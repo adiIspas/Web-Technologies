@@ -1,3 +1,3 @@
 # Web-Technologies
 
-My web pages created with HTML, CSS, JavaScrpit and jQuery.
+My web pages created with HTML, CSS, JavaScrit and jQuery.
