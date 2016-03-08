@@ -5,40 +5,52 @@
 	<title>Contact</title>
 	<meta charset = "utf-8"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="meniu.css">
 </head>
 
 <body>
 	
-	<img src = "logo.png" alt = "Logo"/>
-	<b>Site de Filme</b>
+	<div>
+		<img class = "logo" src = "logo-filme.png" alt = "Logo"/>
+	</div>
 	
-	<nav>
-		<a href = "Home.html">Acasa</a> | 
-		<a href = "Categorii.html">Categorii Filme</a> |
-		<a href = "Teste.html">Teste Cinefili</a> |
-		<a href = "Contact.html">Contact</a>
-	</nav>
+	<ul class = "meniu">
+		<li class = "meniu-item"><a href = "Home.html">Acasa</a></li>
+		<li class = "meniu-item"><a href = "Categorii.html">Categorii Filme</a>
+			<ul class = "submeniu">
+				<li><a href = "Actiune.html">Actiune</a></li>
+				<li><a href = "Animatie.html">Animatie</a></li>
+				<li><a href = "Comedie.html">Comedie</a></li>
+				<li><a href = "Dragoste.html">Dragoste</a></li>
+				<li><a href = "Sf.html">SF</a></li>
+			</ul>
+		</li>
+		<li class = "meniu-item"><a href = "Teste.html">Teste Cinefili</a></li> 
+		<li class = "meniu-item active"><a href = "Contact.html">Contact</a></li>
+	</ul>
 	
-	<b>Ne puteti contacta folosind urmatorul formular</b>
-	
-	<form id="contact_form" action="#" method="POST" enctype="multipart/form-data">
-		<div class="row">
-			<label for="name">Nume:</label><br/>
-			<input id="name" class="input" name="name" type="text" value="" size="30"/><br/>
-		</div>
+	<div class = "box-contact">
+		<h2 class = "text-contact">Ne puteti contacta folosind urmatorul formular</h2>
 		
-		<div class="row">
-			<label for="email">E-mail:</label><br/>
-			<input id="email" class="input" name="email" type="text" value="" size="30"/><br/>
-		</div>
-		
-		<div class="row">
-			<label for="message">Mesaj:</label><br/>
-			<textarea id="message" class="input" name="message" rows="7" cols="30"></textarea><br/>
-		</div>
-		
-		<input id="submit_button" type="submit" value="Trimite" />
-	</form>	
+		<form class = "contact" id="contact_form" action="#" method="POST" enctype="multipart/form-data">
+			<div class="row">
+				<label for="name">Nume:</label><br/>
+				<input class = "input" id="name" class="input" name="name" type="text" value="" size="30"/><br/>
+			</div>
+			
+			<div class="row">
+				<label for="email">E-mail:</label><br/>
+				<input class = "input" id="email" class="input" name="email" type="text" value="" size="30"/><br/>
+			</div>
+			
+			<div class="row">
+				<label for="message">Mesaj:</label><br/>
+				<textarea class = "input" id="message" class="input" name="message" rows="7" cols="30"></textarea><br/>
+			</div>
+			
+			<input id="submit_button" type="submit" value="Trimite" />
+		</form>	
+	</div>
 	
 </body>
 

@@ -5,28 +5,54 @@
 	<title>Filme Dragoste</title>
 	<meta charset = "utf-8"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="meniu.css">
 </head>
 
 <body>
 	
-	<img src = "logo.png" alt = "Logo"/>
-	<b>Site de Filme</b>
+	<div>
+		<img class = "logo" src = "logo-filme.png" alt = "Logo"/>
+	</div>
 	
-	<nav>
-		<a href = "Home.html">Acasa</a> | 
-		<a href = "Categorii.html">Categorii Filme</a> |
-		<a href = "Teste.html">Teste Cinefili</a> |
-		<a href = "Contact.html">Contact</a>
-	</nav>
+	<ul class = "meniu">
+		<li class = "meniu-item"><a href = "Home.html">Acasa</a></li>
+		<li class = "meniu-item"><a href = "Categorii.html">Categorii Filme</a>
+			<ul class = "submeniu">
+				<li><a href = "Actiune.html">Actiune</a></li>
+				<li><a href = "Animatie.html">Animatie</a></li>
+				<li><a href = "Comedie.html">Comedie</a></li>
+				<li class = "active"><a href = "Dragoste.html">Dragoste</a></li>
+				<li><a href = "Sf.html">SF</a></li>
+			</ul>
+		</li>
+		<li class = "meniu-item"><a href = "Teste.html">Teste Cinefili</a></li> 
+		<li class = "meniu-item"><a href = "Contact.html">Contact</a></li>
+	</ul>
 	
-	<section>
-	<h2>Cele mai recente filme de Dragoste</h2>
-	<img src = "noutati.png" alt = "noutati"/>
+	<section class = "box-categorii">
+	<h2 class = "titlu-categorii">Cele mai recente filme de Dragoste</h2>
 	
-		<article>
+	<article class = "filme-recente">
+		<div class = "imagine"><h2>Dragoste</h2>
 			<h3>How to Be Single</h3>
-			<img src = "singur.jpg" alt = "Cum sa fii singur si fericit" width = "200" height = "300"/>
-		</article>
+			<img class = "poster" src = "singur.jpg" alt = "Cum sa fii singur si fericit"/>
+		</div>
+		<div class = "text">
+			<p>
+				Sunt unii care se bucură de singurătate, alţii care sunt de-a dreptul nefericiţi şi mai sunt şi... Alice, Robin, Lucy, Meg, Tom sau David…
+			</p>
+			<p>
+				New York-ul este plin de singuratici care tânjesc după sufletul pereche, după o relaţie amoroasă, după o idilă sau măcar ceva asemănător. Astfel, între texte de agăţat şi aventuri de o noapte, toţi aceşti oameni necăsătoriţi trebuie să înveţe cum să fie singuri şi fericiţi într-o lume în care definiţia iubirii se schimbă în permanenţă.
+			</p>
+			<p>
+				Oraşul care nu doarme niciodată poate fi o sursă inepuizabilă de distracţie pentru cei care vor şti să se bucure de moment.
+			</p>
+			<p>
+				Din 12 februarie la cinema, comedia „Cum să fii singur şi fericit” o readuce în rol principal pe Dakota Johnson, de această dată alături de Rebel Wilson, Alison Brie, Damon Wayans Jr. şi Leslie Mann, sub îndrumarea regizorală a lui Christian Ditter.
+			</p>
+		</div>
+	</article>
+
 	</section>
 	
 </body>

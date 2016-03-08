@@ -5,28 +5,45 @@
 	<title>Filme SF</title>
 	<meta charset = "utf-8"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="meniu.css">
 </head>
 
 <body>
 	
-	<img src = "logo.png" alt = "Logo"/>
-	<b>Site de Filme</b>
+	<div>
+		<img class = "logo" src = "logo-filme.png" alt = "Logo"/>
+	</div>
 	
-	<nav>
-		<a href = "Home.html">Acasa</a> | 
-		<a href = "Categorii.html">Categorii Filme</a> |
-		<a href = "Teste.html">Teste Cinefili</a> |
-		<a href = "Contact.html">Contact</a>
-	</nav>
+	<ul class = "meniu">
+		<li class = "meniu-item"><a href = "Home.html">Acasa</a></li>
+		<li class = "meniu-item"><a href = "Categorii.html">Categorii Filme</a>
+			<ul class = "submeniu">
+				<li><a href = "Actiune.html">Actiune</a></li>
+				<li><a href = "Animatie.html">Animatie</a></li>
+				<li><a href = "Comedie.html">Comedie</a></li>
+				<li><a href = "Dragoste.html">Dragoste</a></li>
+				<li class = "active"><a href = "Sf.html">SF</a></li>
+			</ul>
+		</li>
+		<li class = "meniu-item"><a href = "Teste.html">Teste Cinefili</a></li> 
+		<li class = "meniu-item"><a href = "Contact.html">Contact</a></li>
+	</ul>
 	
-	<section>
-	<h2>Cele mai recente filme de SF</h2>
-	<img src = "noutati.png" alt = "noutati"/>
+	<section class = "box-categorii">
+	<h2 class = "titlu-categorii">Cele mai recente filme SF</h2>
 	
-		<article>
-			<h3>The Martian</h3>
-			<img src = "martian.jpg" alt = "The Martian" width = "200" height = "300"/>
+		<article class = "filme-recente">
+			<div class = "imagine"><h2>SF</h2>
+				<h3>The Martian</h3>
+				<img class = "poster" src = "martian.jpg" alt = "The Martian"/>
+			</div>
+			<div class = "text">
+				<p>
+					În timpul unei misiuni pe Marte cu echipaj uman, astronautul Mark Watney (Damon) este considerat mort, victimă a unei furtuni puternice. Însă Watney supraviețuiește urgiei și descoperă că a fost lăsat singur pe ostila planetă. Cu provizii insuficiente, este nevoit să-și folosească la maxim ingeniozitatea, inteligența și forța interioară pentru a râmâne în viață și a găsi o cale prin care mesajul său de ajutor să ajungă pe Pământ. La milioane de mile distanță, NASA și echipa internațională de oameni de știință caută neîncetat soluția prin care să îl aducă pe ‘marțian’ acasă, în vreme ce colegii săi de echipă pun și ei la cale o misiune îndrăzneață, dacă nu imposibilă, de salvare. Pe măsură ce aceste povești, mostre incredibile de curaj, se desfășoară, voci din lumea întreagă se unesc pentru a încuraja revenirea acasă, în siguranță, a lui Watney.
+				</p>
+			</div>
 		</article>
+		
 	</section>
 	
 </body>

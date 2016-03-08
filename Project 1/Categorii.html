@@ -5,71 +5,113 @@
 	<title>Categorii</title>
 	<meta charset = "utf-8"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="meniu.css">
 </head>
 
 <body>
 	
-	<img src = "logo.png" alt = "Logo"/>
-	<b>Site de Filme</b>
+	<div>
+		<img class = "logo" src = "logo-filme.png" alt = "Logo"/>
+	</div>
 	
-	<nav>
-		<a href = "Home.html">Acasa</a> |
-		<a href = "Categorii.html">Categorii Filme</a> |
-		<a href = "Teste.html">Teste Cinefili</a> | 
-		<a href = "Contact.html">Contact</a>
-	</nav>
-	
-	<ul>
-		<li><a href = "Actiune.html">Actiune</a></li>
-		<li><a href = "Animatie.html">Animatie</a></li>
-		<li><a href = "Comedie.html">Comedie</a></li>
-		<li><a href = "Dragoste.html">Dragoste</a></li>
-		<li><a href = "Sf.html">SF</a></li>
+	<ul class = "meniu">
+		<li class = "meniu-item"><a href = "Home.html">Acasa</a></li>
+		<li class = "meniu-item active"><a href = "Categorii.html">Categorii Filme</a>
+			<ul class = "submeniu">
+				<li><a href = "Actiune.html">Actiune</a></li>
+				<li><a href = "Animatie.html">Animatie</a></li>
+				<li><a href = "Comedie.html">Comedie</a></li>
+				<li><a href = "Dragoste.html">Dragoste</a></li>
+				<li><a href = "Sf.html">SF</a></li>
+			</ul>
+		</li>
+		<li class = "meniu-item"><a href = "Teste.html">Teste Cinefili</a></li> 
+		<li class = "meniu-item"><a href = "Contact.html">Contact</a></li>
 	</ul>
 	
-	<section>
-	<h2>Cele mai recente filme din fiecare categorie</h2>
-	<img src = "noutati.png" alt = "noutati"/>
+	<section class = "box-categorii">
+	<h2 class = "titlu-categorii">Cele mai recente filme</h2>
 	
-		<section>
-			<h2>Actiune</h2>
-			<article>
+		<article class = "filme-recente">
+			<div class = "imagine"><h2>Actiune</h2>
 				<h3>Fast and Furios 6</h3>
-				<img src = "fast6.jpg" alt = "Fast 6" width = "200" height = "300"/>
-			</article>
-		</section>
+				<img class = "poster" src = "fast6.jpg" alt = "Fast 6"/>
+			</div>
+			<div class = "text">
+				<p>
+					De când Dom (Vin Diesel) și Brian (Paul Walker) au dat lovitura de la Rio împotriva imperiului condus de un escroc de talie internațioanlă, aducând în seiful echipei 100 de milioane de dolari, eroii noștri s-au preumblat pe tot globul. Dar, pentru că nu se pot întoarce acasă ca să trăiască liniștiți din acei bani, sunt acum nemulțumiți și simt că le lispește ceva.
+				</p>
+				
+				<p>
+					Hobbs (Dwayne Johnson) a pus ochii pe o grupare formată din șoferi ucigași-mercenari care răspândesc teroarea prin 12 orașe ale lumii, condusă de un geniu diabolic (Luke Evans), a cărui mână dreaptă este nimeni alta decât cea care a fost iubirea lui Dom, și pe care acum o crede moartă – Letty (Michelle Rodriguez). Singura modalitate ca să-i oprească e să fie mai tari decât ei, așa că Hobbs îi cere lui Dom să-și strângă echipa la Londra. Plata? Să fie iertați, ca să poată să se întoarcă și ei liniștiți acasă ca să se reunească cu familiile lor.
+				</p>
+			</div>
+		</article>
 		
-		<section>
-			<h2>Animatie</h2>
-			<article>
+		<article class = "filme-recente">
+			<div class = "imagine"><h2>Animatie</h2>
 				<h3>Zootropolis</h3>
-				<img src = "zootropolis.jpg" alt = "Zootropolis" width = "200" height = "300"/>
-			</article>
-		</section>
+				<img class = "poster" src = "zootropolis.jpg" alt = "Zootropolis"/>
+			</div>
+			<div class = "text">
+				<p>
+					În oraşul animal Zootopia, o vulpe cu gura mare trebuie să fugă când i se înscenează o crimă. Poliţistul cel mai bun din Zootopia, un iepure neprihănit, este pe urma vulpii, dar când amândoi devin ţintele unei conspiraţii, sunt obligaţi să lucreze împreună şi descoperă că şi duşmanii naturali pot deveni cei mai buni prieteni.
+				</p>
+			</div>
+		</article>
 		
-		<section>
-			<h2>Comedie</h2>
-			<article>
+		<article class = "filme-recente">
+			<div class = "imagine"><h2>Comedie</h2>
 				<h3>Dirty Grandpa</h3>
-				<img src = "bunicul.jpg" alt = "Zootropolis" width = "200" height = "300"/>
-			</article>
-		</section>
+				<img class = "poster" src = "bunicul.jpg" alt = "Zootropolis"/>
+			</div>
+			<div class = "text">
+				<p>
+					Jason Kelly (Zac Efron) se află la doar o săptămână distanță de nunta cu fiica răsfățată a șefului său, deci cu un pas mai aproape de visul lui de a deveni partener la firma de avocatură unde lucrează de mult. Abia târziu, tânărul va realiza că toate planurile îi sunt periclitate de bunicul guraliv, cu care pleacă în vacanța de primăvară la Daytona.
+				</p>
+
+				<p>	
+					Între petreceri scandaloase, conficte aprinse în bar și o noapte epică de karaoke, bătrânul Dick (Robert De Niro) pare de neoprit. Încearcă cele mai provocatoare experiențe și face tot posibilul să-și convingă nepotul să i se alăture. La finalul acestui concediu incredibil, bunicul dezlănțuit și formalul său nepot descoperă că există multe lucruri pe care le pot învața unul de la celălalt și leagă o relație mai strânsă ca niciodată.
+				</p>
+
+				<p>
+					Comedia „Bunicul dezlănțuit” îl prezintă, din 5 februarie la cinema, pe Robert De Niro în rolul unui veteran lipsit de prejudecăți și hotărât să demonstreze că viața merită trăită din plin la orice vârstă. Filmul este distribuit de Freeman Entertainment.
+				</p>
+			</div>
+		</article>
 		
-		<section>
-			<h2>Dragoste</h2>
-			<article>
+		<article class = "filme-recente">
+			<div class = "imagine"><h2>Dragoste</h2>
 				<h3>How to Be Single</h3>
-				<img src = "singur.jpg" alt = "Cum sa fii singur si fericit" width = "200" height = "300"/>
-			</article>
-		</section>
+				<img class = "poster" src = "singur.jpg" alt = "Cum sa fii singur si fericit"/>
+			</div>
+			<div class = "text">
+				<p>
+					Sunt unii care se bucură de singurătate, alţii care sunt de-a dreptul nefericiţi şi mai sunt şi... Alice, Robin, Lucy, Meg, Tom sau David…
+				</p>
+				<p>
+					New York-ul este plin de singuratici care tânjesc după sufletul pereche, după o relaţie amoroasă, după o idilă sau măcar ceva asemănător. Astfel, între texte de agăţat şi aventuri de o noapte, toţi aceşti oameni necăsătoriţi trebuie să înveţe cum să fie singuri şi fericiţi într-o lume în care definiţia iubirii se schimbă în permanenţă.
+				</p>
+				<p>
+					Oraşul care nu doarme niciodată poate fi o sursă inepuizabilă de distracţie pentru cei care vor şti să se bucure de moment.
+				</p>
+				<p>
+					Din 12 februarie la cinema, comedia „Cum să fii singur şi fericit” o readuce în rol principal pe Dakota Johnson, de această dată alături de Rebel Wilson, Alison Brie, Damon Wayans Jr. şi Leslie Mann, sub îndrumarea regizorală a lui Christian Ditter.
+				</p>
+			</div>
+		</article>
 		
-		<section>
-			<h2>SF</h2>
-			<article>
+		<article class = "filme-recente">
+			<div class = "imagine"><h2>SF</h2>
 				<h3>The Martian</h3>
-				<img src = "martian.jpg" alt = "The Martian" width = "200" height = "300"/>
-			</article>
-		</section>
+				<img class = "poster" src = "martian.jpg" alt = "The Martian"/>
+			</div>
+			<div class = "text">
+				<p>
+					În timpul unei misiuni pe Marte cu echipaj uman, astronautul Mark Watney (Damon) este considerat mort, victimă a unei furtuni puternice. Însă Watney supraviețuiește urgiei și descoperă că a fost lăsat singur pe ostila planetă. Cu provizii insuficiente, este nevoit să-și folosească la maxim ingeniozitatea, inteligența și forța interioară pentru a râmâne în viață și a găsi o cale prin care mesajul său de ajutor să ajungă pe Pământ. La milioane de mile distanță, NASA și echipa internațională de oameni de știință caută neîncetat soluția prin care să îl aducă pe ‘marțian’ acasă, în vreme ce colegii săi de echipă pun și ei la cale o misiune îndrăzneață, dacă nu imposibilă, de salvare. Pe măsură ce aceste povești, mostre incredibile de curaj, se desfășoară, voci din lumea întreagă se unesc pentru a încuraja revenirea acasă, în siguranță, a lui Watney.
+				</p>
+			</div>
+		</article>
 	</section>
 	
 </body>

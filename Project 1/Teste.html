@@ -5,38 +5,54 @@
 	<title>Teste Cinefili</title>
 	<meta charset = "utf-8"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="meniu.css">
 </head>
 
 <body>
 	
-	<img src = "logo.png" alt = "Logo"/>
-	<b>Site de Filme</b>
+	<div>
+		<img class = "logo" src = "logo-filme.png" alt = "Logo"/>
+	</div>
 	
-	<nav>
-		<a href = "Home.html">Acasa</a> |
-		<a href = "Categorii.html">Categorii Filme</a> |
-		<a href = "Teste.html">Teste Cinefili</a> |
-		<a href = "Contact.html">Contact</a> 
-	</nav>
+	<ul class = "meniu">
+		<li class = "meniu-item"><a href = "Home.html">Acasa</a></li>
+		<li class = "meniu-item"><a href = "Categorii.html">Categorii Filme</a>
+			<ul class = "submeniu">
+				<li><a href = "Actiune.html">Actiune</a></li>
+				<li><a href = "Animatie.html">Animatie</a></li>
+				<li><a href = "Comedie.html">Comedie</a></li>
+				<li><a href = "Dragoste.html">Dragoste</a></li>
+				<li><a href = "Sf.html">SF</a></li>
+			</ul>
+		</li>
+		<li class = "meniu-item active"><a href = "Teste.html">Teste Cinefili</a></li> 
+		<li class = "meniu-item"><a href = "Contact.html">Contact</a></li>
+	</ul>
 	
-	<p class = "questions">1. In ce an a aparut filmul Fast and Furios 6?</p>
-	
-		<input type = "radio" name = "q1" value = "a"/><label>2013</label>
-		<input type = "radio" name = "q1" value = "b" /><label>2014</label>
-		<input type = "radio" name = "q1" value = "c" /><label>2015</label>
-		<input type = "radio" name = "q1" value = "d" /><label>2016</label>
+	<div class = "box-teste">
+	<h2 class = "titlu-test"> Test pentru cinefili </h2>
+		<div class = "questions">
+			<p>1. In ce an a aparut filmul Fast and Furios 6?</p>
+			
+				<input type = "radio" name = "q1" value = "a"/><label>2013</label>
+				<input type = "radio" name = "q1" value = "b" /><label>2014</label>
+				<input type = "radio" name = "q1" value = "c" /><label>2015</label>
+				<input type = "radio" name = "q1" value = "d" /><label>2016</label>
+		</div>
 
-	
-	<p class = "questions">2. In ce an a aparut filmul Zootropolis?</p>
-	
-		<input type = "radio" name = "q2" value = "a" /><label>2013</label>
-		<input type = "radio" name = "q2" value = "b" /><label>2014</label>
-		<input type = "radio" name = "q2" value = "c" /><label>2015</label>
-		<input type = "radio" name = "q2" value = "d" /><label>2016</label>
+		<div class = "questions">
+			<p>2. In ce an a aparut filmul Zootropolis?</p>
+			
+				<input type = "radio" name = "q2" value = "a" /><label>2013</label>
+				<input type = "radio" name = "q2" value = "b" /><label>2014</label>
+				<input type = "radio" name = "q2" value = "c" /><label>2015</label>
+				<input type = "radio" name = "q2" value = "d" /><label>2016</label>
+		</div>
 
 
-	<div id="results">
-		<input type = "submit" value = "Trimite"/>
+		<div class = "send" id="results">
+			<input type = "submit" value = "Trimite"/>
+		</div>
 	</div>
 	
 </body>

@@ -3,29 +3,49 @@
 
 <head>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="meniu.css">
 	<title>Filme Actiune</title>
 	<meta charset = "utf-8"/>
 </head>
 
 <body>
 	
-	<img src = "logo.png" alt = "Logo"/>
-	<b>Site de Filme</b>
+	<div>
+		<img class = "logo" src = "logo-filme.png" alt = "Logo"/>
+	</div>
 	
-	<nav>
-		<a href = "Home.html">Acasa</a> | 
-		<a href = "Categorii.html">Categorii Filme</a> |
-		<a href = "Teste.html">Teste Cinefili</a> |
-		<a href = "Contact.html">Contact</a>
-	</nav>
+	<ul class = "meniu">
+		<li class = "meniu-item"><a href = "Home.html">Acasa</a></li>
+		<li class = "meniu-item"><a href = "Categorii.html">Categorii Filme</a>
+			<ul class = "submeniu">
+				<li class = "active"><a href = "Actiune.html">Actiune</a></li>
+				<li><a href = "Animatie.html">Animatie</a></li>
+				<li><a href = "Comedie.html">Comedie</a></li>
+				<li><a href = "Dragoste.html">Dragoste</a></li>
+				<li><a href = "Sf.html">SF</a></li>
+			</ul>
+		</li>
+		<li class = "meniu-item"><a href = "Teste.html">Teste Cinefili</a></li> 
+		<li class = "meniu-item"><a href = "Contact.html">Contact</a></li>
+	</ul>
 	
-	<section>
-	<h2>Cele mai recente filme de Actiune</h2>
-	<img src = "noutati.png" alt = "noutati"/>
+	<section class = "box-categorii">
+	<h2 class = "titlu-categorii">Cele mai recente filme de Actiune</h2>
 	
-		<article>
-			<h3>Fast and Furios 6</h3>
-			<img src = "fast6.jpg" alt = "Fast 6" width = "200" height = "300"/>
+		<article class = "filme-recente">
+			<div class = "imagine"><h2>Actiune</h2>
+				<h3>Fast and Furios 6</h3>
+				<img class = "poster" src = "fast6.jpg" alt = "Fast 6"/>
+			</div>
+			<div class = "text">
+				<p>
+					De când Dom (Vin Diesel) și Brian (Paul Walker) au dat lovitura de la Rio împotriva imperiului condus de un escroc de talie internațioanlă, aducând în seiful echipei 100 de milioane de dolari, eroii noștri s-au preumblat pe tot globul. Dar, pentru că nu se pot întoarce acasă ca să trăiască liniștiți din acei bani, sunt acum nemulțumiți și simt că le lispește ceva.
+				</p>
+				
+				<p>
+					Hobbs (Dwayne Johnson) a pus ochii pe o grupare formată din șoferi ucigași-mercenari care răspândesc teroarea prin 12 orașe ale lumii, condusă de un geniu diabolic (Luke Evans), a cărui mână dreaptă este nimeni alta decât cea care a fost iubirea lui Dom, și pe care acum o crede moartă – Letty (Michelle Rodriguez). Singura modalitate ca să-i oprească e să fie mai tari decât ei, așa că Hobbs îi cere lui Dom să-și strângă echipa la Londra. Plata? Să fie iertați, ca să poată să se întoarcă și ei liniștiți acasă ca să se reunească cu familiile lor.
+				</p>
+			</div>
 		</article>
 	</section>
 

@@ -1,0 +1,40 @@
+ul {
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+}
+
+li a {
+    display: block;
+	color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(0,191,255);
+}
+
+.meniu-item {
+    float: left;
+}
+
+.meniu-item, .submeniu{
+	width: 135px;
+}
+
+.submeniu{
+	display:none;
+	position:absolute;
+}
+.meniu-item:hover .submeniu{
+	display:block;
+}
+
+.active {
+	background-color: rgb(0,191,255);
+}

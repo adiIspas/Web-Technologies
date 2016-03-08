@@ -5,28 +5,53 @@
 	<title>Filme Comedie</title>
 	<meta charset = "utf-8"/>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="meniu.css">
 </head>
 
 <body>
 	
-	<img src = "logo.png" alt = "Logo"/>
-	<b>Site de Filme</b>
+	<div>
+		<img class = "logo" src = "logo-filme.png" alt = "Logo"/>
+	</div>
 	
-	<nav>
-		<a href = "Home.html">Acasa</a> | 
-		<a href = "Categorii.html">Categorii Filme</a> |
-		<a href = "Teste.html">Teste Cinefili</a> |
-		<a href = "Contact.html">Contact</a>
-	</nav>
+	<ul class = "meniu">
+		<li class = "meniu-item"><a href = "Home.html">Acasa</a></li>
+		<li class = "meniu-item"><a href = "Categorii.html">Categorii Filme</a>
+			<ul class = "submeniu">
+				<li><a href = "Actiune.html">Actiune</a></li>
+				<li><a href = "Animatie.html">Animatie</a></li>
+				<li class = "active"><a href = "Comedie.html">Comedie</a></li>
+				<li><a href = "Dragoste.html">Dragoste</a></li>
+				<li><a href = "Sf.html">SF</a></li>
+			</ul>
+		</li>
+		<li class = "meniu-item"><a href = "Teste.html">Teste Cinefili</a></li> 
+		<li class = "meniu-item"><a href = "Contact.html">Contact</a></li>
+	</ul>
 	
-	<section>
-	<h2>Cele mai recente filme de Comedie</h2>
-	<img src = "noutati.png" alt = "noutati"/>
+	<section class = "box-categorii">
+	<h2 class = "titlu-categorii">Cele mai recente filme de Comedie</h2>
 	
-		<article>
-			<h3>Dirty Grandpa</h3>
-			<img src = "bunicul.jpg" alt = "Zootropolis" width = "200" height = "300"/>
+		<article class = "filme-recente">
+			<div class = "imagine"><h2>Comedie</h2>
+				<h3>Dirty Grandpa</h3>
+				<img class = "poster" src = "bunicul.jpg" alt = "Zootropolis"/>
+			</div>
+			<div class = "text">
+				<p>
+					Jason Kelly (Zac Efron) se află la doar o săptămână distanță de nunta cu fiica răsfățată a șefului său, deci cu un pas mai aproape de visul lui de a deveni partener la firma de avocatură unde lucrează de mult. Abia târziu, tânărul va realiza că toate planurile îi sunt periclitate de bunicul guraliv, cu care pleacă în vacanța de primăvară la Daytona.
+				</p>
+
+				<p>	
+					Între petreceri scandaloase, conficte aprinse în bar și o noapte epică de karaoke, bătrânul Dick (Robert De Niro) pare de neoprit. Încearcă cele mai provocatoare experiențe și face tot posibilul să-și convingă nepotul să i se alăture. La finalul acestui concediu incredibil, bunicul dezlănțuit și formalul său nepot descoperă că există multe lucruri pe care le pot învața unul de la celălalt și leagă o relație mai strânsă ca niciodată.
+				</p>
+
+				<p>
+					Comedia „Bunicul dezlănțuit” îl prezintă, din 5 februarie la cinema, pe Robert De Niro în rolul unui veteran lipsit de prejudecăți și hotărât să demonstreze că viața merită trăită din plin la orice vârstă. Filmul este distribuit de Freeman Entertainment.
+				</p>
+			</div>
 		</article>
+		
 	</section>
 	
 </body>

@@ -1,3 +1,81 @@
 body {
     background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.logo {
+	width: 15%;
+}
+
+.poster {
+    width: 95%;
+}
+
+.box-home {
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	background-color: rgba(0,191,255,0.2);
+}
+
+.box-contact {
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	background-color: rgba(0,191,255,0.2);
+}
+
+.box-categorii {
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	background-color: rgba(0,191,255,0.2);
+}
+
+.box-teste {
+	margin-left: auto;
+	margin-right: auto;
+	width: 65%;
+	background-color: rgba(0,191,255,0.2);
+}
+
+.send {
+	margin-top: 15px;
+	text-align: center;
+}
+
+.text-contact, .titlu-test {
+	text-align: center;
+}
+
+.contact {
+	text-align: center;
+}
+
+.input {
+	width: 50%;
+}
+
+.home-title, .titlu-categorii {
+	text-align: center;
+}
+
+.filme-recente {
+	border-style: solid;
+    border-width: medium;
+	overflow: auto;
+	margin-bottom: 1%;
+	word-wrap: break-word;
+}
+
+.imagine {
+	width: 20%;
+	float: left;
+}
+
+.text {
+	margin-top: 9%;
+	width: 80%;
+	float: right;
 }
