@@ -79,3 +79,36 @@ body {
 	width: 80%;
 	float: right;
 }
+
+footer { 
+	overflow: auto;
+    display: block;
+	border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+	margin-top: 10px;
+	margin-bottom: 0px;
+}
+
+.text-footer {
+	width: 95%;
+	float: left;
+	margin-left: 10px;
+}
+
+.top-imagine{
+	position: relative;
+}
+
+.imagine-footer {
+	position: absolute;
+	margin-top: 15px;
+	margin-right: 10px;
+	right: 0px;
+}
+
+.imagine-facebook {
+	position: absolute;
+	margin-top: 7px;
+	margin-right: 10px;
+	right: 0px;
+}
