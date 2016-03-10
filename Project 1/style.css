@@ -4,7 +4,13 @@ body {
     background-attachment: fixed;
 }
 
+p {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
 .logo {
+	min-width: 100px;
 	width: 15%;
 }
 
@@ -16,28 +22,28 @@ body {
 	margin-left: auto;
 	margin-right: auto;
 	width: 65%;
-	background-color: rgba(0,191,255,0.2);
+	background-color: rgba(0,191,255,0.8);
 }
 
 .box-contact {
 	margin-left: auto;
 	margin-right: auto;
 	width: 65%;
-	background-color: rgba(0,191,255,0.2);
+	background-color: rgba(0,191,255,0.8);
 }
 
 .box-categorii {
 	margin-left: auto;
 	margin-right: auto;
 	width: 65%;
-	background-color: rgba(0,191,255,0.2);
+	background-color: rgba(0,191,255,0.8);
 }
 
 .box-teste {
 	margin-left: auto;
 	margin-right: auto;
 	width: 65%;
-	background-color: rgba(0,191,255,0.2);
+	background-color: rgba(0,191,255,0.8);
 }
 
 .send {
@@ -106,9 +112,29 @@ footer {
 	right: 0px;
 }
 
-.imagine-facebook {
+.facebook {
 	position: absolute;
-	margin-top: 7px;
-	margin-right: 10px;
-	right: 0px;
+	top: 15%;
+	right: 10px;
+}
+
+.meniu-s {
+	position: relative;
+}
+
+.actori-imagine {
+	float: right;
+	min-width: 30px;
+	width: 6%;
+}
+
+.actori-imagine:hover + .actori-text{
+	display: block;
+}
+
+.actori-text {
+	text-align: right;
+	display: none;
+	background: none;
+	border: none;
 }
