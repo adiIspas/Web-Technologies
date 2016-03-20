@@ -18,6 +18,10 @@ p {
     width: 95%;
 }
 
+.buton-trailer {
+    width: 95%;
+}
+
 .box-home {
 	margin-left: auto;
 	margin-right: auto;
@@ -105,6 +109,12 @@ footer {
 	position: relative;
 }
 
+.img-home {
+	margin-left: auto;
+	margin-right: auto;
+	width: 7%;
+}
+
 .imagine-footer {
 	position: absolute;
 	margin-top: 15px;
@@ -123,6 +133,8 @@ footer {
 }
 
 .actori-imagine {
+	margin-top: 23px;
+	margin-bottom: 10px;
 	float: right;
 	min-width: 30px;
 	width: 6%;
@@ -133,8 +145,60 @@ footer {
 }
 
 .actori-text {
+	margin-top: 10px;
 	text-align: right;
 	display: none;
 	background: none;
 	border: none;
+	margin-bottom: 10px;
+}
+
+.hidden-element { 
+	display: none; 
+}
+
+.video-container {
+	width: 80%;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+.video-container iframe,  
+.video-container object,  
+.video-container embed {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.video-container2 {
+	width: 80%;
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 30px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+}
+.video-container2 iframe,  
+.video-container2 object,  
+.video-container2 embed {
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 70%;
+}
+
+iframe { 
+border: none; 
 }
