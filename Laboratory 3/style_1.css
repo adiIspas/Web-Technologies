@@ -1,0 +1,15 @@
+@media screen and (min-width: 480px) {
+    body {
+        background-color: #FF3300;
+    }
+}
+
+@media screen and (max-width: 479px) {
+ body {
+        background-color: #00FFFF;
+    }
+}
+
+table, th, td {
+   border: 1px solid black;
+}
