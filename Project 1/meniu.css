@@ -41,6 +41,7 @@ li a:hover {
 }
 .meniu-item:hover .submeniu{
 	display:block;
+	
 }
 
 .active {

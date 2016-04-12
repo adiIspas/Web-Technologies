@@ -1,0 +1,44 @@
+
+body{
+  background: yellow;
+}
+
+.welcome{
+  font-size: 95px;
+  font-family: serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.div1{
+  overflow: auto;
+}
+
+.div2{
+  overflow: auto;
+}
+
+.img1{
+  float: left;
+}
+
+.par1{
+  margin-top: 100px;
+  float: right;
+}
+
+#art1{
+  float: left;
+}
+
+#art2{
+  float:right;
+}
+
+#art3{
+  float: left;
+}
+
+#art4{
+  float:right;
+}

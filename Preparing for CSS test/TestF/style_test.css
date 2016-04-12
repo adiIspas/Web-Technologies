@@ -1,0 +1,45 @@
+body {
+  background-color: yellow;
+}
+
+p {
+  text-align: center;
+  font-size: 100px;
+  font-style: italic;
+  font-family: serif;
+}
+
+div.img {
+    margin: 5px;
+    float: left;
+    width: 100px;
+    transition: width 1s, transform 2s;
+}
+
+div.img:hover {
+    width: 200px;
+    background: ;
+    transform: rotate(25deg);
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 100px;
+  font-family: serif;
+  font-style: italic;
+}
+
+.galery {
+  margin-left: auto;
+  margin-right: auto;
+}

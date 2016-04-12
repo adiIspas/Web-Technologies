@@ -1,0 +1,18 @@
+@media screen and (max-width: 480px){
+  body{
+    background: red;
+  }
+}
+
+@media screen and (min-width: 481px){
+  body{
+    background: yellow;
+  }
+}
+
+.welcome{
+  font-size: 100px;
+  font-style: italic;
+  font-family: serif;
+  text-align: center;
+}

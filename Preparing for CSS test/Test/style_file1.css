@@ -1,0 +1,23 @@
+div#container{
+width: 300px;
+background: linear-gradient(to right, skyblue , blue);
+padding:10px;
+border:1px solid navy;
+}
+
+section{
+  font-family: "Times New Roman", Georgia, Serif;
+  text-align: justify;
+  padding:5%;
+  background:white;
+}
+section h2:first-child{
+  margin:0px;
+}
+section h2{
+  margin:0px;
+}
+
+h2 {
+  font-variant: small-caps;
+}

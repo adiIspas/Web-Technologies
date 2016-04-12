@@ -1,0 +1,86 @@
+body {
+  background: 	#00FF00;
+}
+
+div.img {
+    margin: 5px;
+    float: left;
+    width: 100px;
+    transition: width 1s, transform 2s;
+}
+
+div.img:hover {
+    width: 200px;
+    background: ;
+    transform: rotate(25deg);
+}
+
+div.img img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+.welcome {
+  text-align: center;
+  font-size: 100px;
+  font-family: serif;
+  font-style: italic;
+}
+
+div.rotatie1 {
+    margin-left: 50px;
+    margin-right: auto;
+    margin-top: 350px;
+    position: relative;
+    width: 128px;
+    height: 128px;
+
+    animation-name: rotatie21;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+div.rotatie2 {
+    margin-left: 93px;
+    margin-top: -25px;
+    margin-right: auto;
+    width: 128px;
+    height: 128px;
+
+    animation-name: rotatie22;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotatie1 {
+    0%   {left:0px; top:0px;}
+    25%  {left:0px; top:200px;}
+    50%  {left:200px; top:200px;}
+    75%  {left:200px; top:0px;}
+    100% {left:0px; top:0px;}
+}
+
+@keyframes rotatie21 {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes rotatie22 {
+    from {
+        transform:rotate(360deg);
+    }
+    to {
+        transform:rotate(0deg);
+    }
+}

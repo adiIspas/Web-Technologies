@@ -1,0 +1,72 @@
+#circle {
+  width: 500px;
+  height: 500px;
+  border-radius: 250px;
+  background: yellow;
+}
+
+#circleo1 {
+  margin-left: 350px;
+  margin-top: 150px;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: black;
+}
+
+#circleo2 {
+  margin-left: 80px;
+  margin-top: 150px;
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  border-radius: 25px;
+  background: black;
+}
+
+#rectangle01 {
+	width: 80px;
+	height: 15px;
+  position: fixed;
+  margin-top: -400px;
+  margin-left: 50px;
+	background: red;
+  transform: rotate(-25deg);
+}
+
+.cerc {
+  transition: width 2s, transform 3s;
+}
+
+.cerc #rectangle02 {
+	width: 80px;
+	height: 15px;
+  position: fixed;
+  margin-top: -400px;
+  margin-left: 350px;
+	background: red;
+  transform: rotate(25deg);
+}
+
+.cerc:hover #rectangle02{
+  background: blue;
+  transform: rotate(-45deg);
+}
+
+.cerc:hover #rectangle01{
+  background: blue;
+    transform: rotate(45deg);
+}
+
+.cerc:hover #circleo2{
+  background: red;
+  box-shadow: 1px 1px 5px #888888;
+  filter:blur(5px);
+}
+
+.cerc:hover #circleo1{
+  background: red;
+  box-shadow: 1px 1px 5px #888888;
+  filter:blur(5px);
+}
