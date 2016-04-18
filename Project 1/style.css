@@ -46,11 +46,11 @@ p {
 .box-teste {
 	margin-left: auto;
 	margin-right: auto;
-	width: 65%;
+	width: 50%;
 	background-color: rgba(0,191,255,0.8);
 }
 
-.send {
+.submitter {
 	margin-top: 15px;
 	text-align: center;
 }
@@ -90,7 +90,7 @@ p {
 	float: right;
 }
 
-footer { 
+footer {
 	overflow: auto;
     display: block;
 	border: 1px solid #e7e7e7;
@@ -153,8 +153,8 @@ footer {
 	margin-bottom: 10px;
 }
 
-.hidden-element { 
-	display: none; 
+.hidden-element {
+	display: none;
 }
 
 .video-container {
@@ -166,8 +166,8 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 }
-.video-container iframe,  
-.video-container object,  
+.video-container iframe,
+.video-container object,
 .video-container embed {
 	position: absolute;
 	margin-left: auto;
@@ -187,8 +187,8 @@ footer {
 	margin-left: auto;
 	margin-right: auto;
 }
-.video-container2 iframe,  
-.video-container2 object,  
+.video-container2 iframe,
+.video-container2 object,
 .video-container2 embed {
 	position: absolute;
 	margin-left: auto;
@@ -199,6 +199,6 @@ footer {
 	height: 70%;
 }
 
-iframe { 
-border: none; 
+iframe {
+border: none;
 }

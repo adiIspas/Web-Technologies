@@ -7,16 +7,17 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="meniu.css">
 	<link rel="icon" type="image/png" href="favicon.ico">
+  <script type="text/javascript" src = "quiz.js"></script>
 </head>
 
 <body>
-	
+
 	<div>
 		<a href = "Home.html">
 			<img class = "logo" src = "logo-filme.png" alt = "Logo"/>
 		</a>
 	</div>
-	
+
 	<div class = "meniu-s">
 	<ul class = "meniu">
 		<li class = "meniu-item"><a href = "Home.html">Acasa</a></li>
@@ -29,40 +30,100 @@
 				<li><a href = "Sf.html">SF</a></li>
 			</ul>
 		</li>
-		<li class = "meniu-item"><a href = "Teste.html" class = "active">Teste Cinefili</a></li> 
+		<li class = "meniu-item"><a href = "Teste.html" class = "active">Teste Cinefili</a></li>
 		<li class = "meniu-item"><a href = "Contact.html">Contact</a></li>
 	</ul>
 		<div class = "facebook">
 		<a href="https://www.facebook.com/adi.ispas95" target = "blank"><img class = "imagine-facebook" src = "facebook.png" alt = "Facebook"></a>
 	</div>
 	</div>
-	
+
 	<div class = "box-teste">
-	<h2 class = "titlu-test"> Test pentru cinefili </h2>
-		<div class = "questions">
-			<p>1. In ce an a aparut filmul Fast and Furios 6?</p>
-			
-				<input type = "radio" name = "q1" value = "a"/><label>2013</label>
-				<input type = "radio" name = "q1" value = "b" /><label>2014</label>
-				<input type = "radio" name = "q1" value = "c" /><label>2015</label>
-				<input type = "radio" name = "q1" value = "d" /><label>2016</label>
-		</div>
+		<h2 class = "titlu-test"> Test pentru cinefili </h2>
+	  	<div>
+	  		<p class="question">1. In ce an a aparut filmul Zootopia?</p>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">2016</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>2015</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>2014</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>2013</label>
+	  	</div>
 
-		<div class = "questions">
-			<p>2. In ce an a aparut filmul Zootropolis?</p>
-			
-				<input type = "radio" name = "q2" value = "a" /><label>2013</label>
-				<input type = "radio" name = "q2" value = "b" /><label>2014</label>
-				<input type = "radio" name = "q2" value = "c" /><label>2015</label>
-				<input type = "radio" name = "q2" value = "d" /><label>2016</label>
-		</div>
+	  	<div>
+	  		<p class="question">2. In ce an aparut filmul Fast and Furious 6</p>
 
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>2012</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">2013</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>2014</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>2015</label>
+	  	</div>
 
-		<div class = "send" id="results">
-			<input type = "submit" value = "Trimite"/>
-		</div>
+	  	<div>
+	  		<p class="question">3. In ce an a aparut filmul Dirty Grandpa?</p>
+
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>2013</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3">2016</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>2014</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>2015</label>
+
+			</div>
+
+	  	<div>
+	  		<p class="question">4. In ce an a aparut filmul The Martian?</p>
+
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>2013</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label id="correctString4">2015</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>2012</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>2014</label>
+
+	  	</div>
+
+			<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="submitQuiz()"
+          type="submit" value="Verifica" />
+
+    </div>
+					<br>
+<!--show only wrong answers on submit-->
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+
+<!--show score upon submit-->
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
 	</div>
-
+		</div>
 	<footer>
 	  <div class = "text-footer">
 		<p>Creat de Adrian Ispas <br>
@@ -73,7 +134,7 @@
 		<a href="#top"><img class = "imagine-footer" src = "top.png" alt = "Top of the page"></a>
 	  </div>
 	</footer>
-	
+
 </body>
 
 </html>
