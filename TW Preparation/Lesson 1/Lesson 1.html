@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Site</title>
+    <script type="text/javascript" src = "welcome.js"></script>
+    <script type="text/javascript" src = "confirmAge.js"></script>
+    <script type="text/javascript" src = "exit.js"></script>
+
+  </head>
+  <body>
+
+    <p id="traducere">Aici va fi afisata traducerea.</p>
+
+    <script type="text/javascript">
+    var word = window.prompt("Cuvant");
+
+    var dictionar = {aceasta:"this", este:"is", un:"a"};
+
+    document.getElementById("traducere").innerHTML =
+    word + " inseamna " + dictionar[word];
+
+    for(i in dictionar)
+      if(i == word)
+        alert("da");
+
+    if(dictionar[word])
+      alert("Am gasit cuvantul");
+    else {
+      alert("Nu am gasit cuvantul");
+    }
+
+    </script>
+  </body>
+</html>
