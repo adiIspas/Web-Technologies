@@ -1,0 +1,7 @@
+#p1:hover + #p2{
+  background-color: red;
+}
+
+#p2:hover + #p1{
+  background-color: yellow;
+}
