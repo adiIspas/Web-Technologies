@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Test</title>
+    <script type="text/javascript" src = "verifica.js"></script>
+    <script type="text/javascript" src = "contacte.js"></script>
+  </head>
+  <body>
+    <div class = "box-teste">
+		<h2 class = "titlu-test"> Test </h2>
+	  	<div>
+	  		<p class="question">1. Intrebarea 1?</p>
+	    	<input class="answer" type="radio" name="q1" value="1">
+	        <label id="correctString1">Raspuns 1 Correct</label>
+	    	<br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>Raspuns 2</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>Raspuns 3</label>
+	        <br>
+	        <input class="answer" type="radio" name="q1" value="0">
+	        <label>Raspuns 4</label>
+	  	</div>
+
+	  	<div>
+	  		<p class="question">2. Intrebarea 2?</p>
+
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>Raspuns 1</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="1">
+	        <label id="correctString2">Raspuns 2 Corect</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>Raspuns 3</label>
+	        <br>
+	        <input class="answer" type="radio" name="q2" value="0">
+	        <label>Raspuns 4</label>
+	  	</div>
+
+	  	<div>
+	  		<p class="question">3. Intrebarea 3?</p>
+
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>Raspuns 1</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>Raspuns 2</label>
+          <br>
+	        <input class="answer" type="radio" name="q3" value="1">
+	        <label id="correctString3">Raspuns 3 Corect</label>
+	        <br>
+	        <input class="answer" type="radio" name="q3" value="0">
+	        <label>Raspuns 4</label>
+
+			</div>
+
+	  	<div>
+	  		<p class="question">4. Intrebarea 4?</p>
+
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>Raspuns 1</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>Raspuns 2</label>
+	        <br>
+	        <input class="answer" type="radio" name="q4" value="0">
+	        <label>Raspuns 3</label>
+          <br>
+	        <input class="answer" type="radio" name="q4" value="1">
+	        <label id="correctString4">Raspuns 4 Corect</label>
+
+	  	</div>
+
+			<br/>
+  <div class="submitter">
+          <input class="quizSubmit" id="submitButton" onClick="quiz()"
+          type="submit" value="Verifica" />
+
+    </div>
+    <br>
+    <div class="quizAnswers" id="correctAnswer1"></div>
+	    <div class="quizAnswers" id="correctAnswer2"></div>
+    <div class="quizAnswers" id="correctAnswer3"></div>
+    <div class="quizAnswers" id="correctAnswer4"></div>
+    <div>
+    	<h2 class="quizScore" id="userScore"></h2>
+    </div>
+	</div>
+
+<div class = "contacte">
+  <h1>Contacte</h1>
+  <button type="button" onclick="adauga()">Adauga</button>
+  <button type="button" onclick="afiseaza()">Afiseaza</button>
+      <br>
+      <hr>
+      <b>Informatii</b>
+      <p id = "contact">
+        Informatii despre persoane.
+      </p>
+
+</div>
+
+<h1> Cuprins </h1>
+
+<div class = "continut">
+    <h1>Titlu 1</h1>
+    <h2>Subtitlu 1</h2>
+    <h3>SubSubTitlu 1
+    <h2>Subtitlu 2</h2>
+
+    <h1>Titlu 2</h1>
+    <h2>Subtitlu 1</h2>
+    <h3>SubSubTitlu 1
+    <h2>Subtitlu 2</h2>
+
+    <h1>Titlu 3</h1>
+    <h2>Subtitlu 1</h2>
+    <h3>SubSubTitlu 1
+    <h2>Subtitlu 2</h2>
+</div>
+
+<button type="button" name="button">Genereaza cuprins</button>
+  </body>
+</html>
