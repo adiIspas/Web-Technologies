@@ -2,23 +2,25 @@
 <html lang = "ro">
 
 <head>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="meniu.css">
+	<link id = "tema" rel="stylesheet" type="text/css" href="style.css">
+	<link id = "temameniu" rel="stylesheet" type="text/css" href="meniu.css">
+	<link rel="stylesheet" type="text/css" href="teme1.css">
 	<link rel="icon" type="image/png" href="favicon.ico">
 	<script type="text/javascript" src = "exit.js"></script>
+	<script type="text/javascript" src = "teme.js"></script>
 	<script type="text/javascript" src = "welcome.js"></script>
 	<title>Filme - Acasa</title>
 	<meta charset = "utf-8"/>
 </head>
 
 <body>
-	
+
 	<div id = "top">
 		<a href = "Home.html">
 			<img class = "logo" src = "logo-filme.png" alt = "Logo"/>
 		</a>
 	</div>
-	
+
 	<div class = "meniu-s">
 	<ul class = "meniu">
 		<li class = "meniu-item active"><a href = "Home.html">Acasa</a></li>
@@ -31,42 +33,46 @@
 				<li><a href = "Sf.html">SF</a></li>
 			</ul>
 		</li>
-		<li class = "meniu-item"><a href = "Teste.html">Teste Cinefili</a></li> 
+		<li class = "meniu-item"><a href = "Teste.html">Teste Cinefili</a></li>
 		<li class = "meniu-item"><a href = "Contact.html">Contact</a></li>
 	</ul>
 	<div class = "facebook">
 		<a href="https://www.facebook.com/adi.ispas95" target = "blank"><img class = "imagine-facebook" src = "facebook.png" alt = "Facebook"></a>
 	</div>
 	</div>
-	
+
+  <div class = "teme1">
+		<button type="button" name="button" onclick="schimba()">Schimba tema</button>
+	</div>
+
 	<div class = "box-home">
 		<h1 class = "home-title">Despre Filme</h1>
 		<p>
 			Film este termenul utilizat pentru desemnarea, în accepțiune mai largă, a produsului final al artei și industriei cinematografice.
 		</p>
-		
+
 		<p>
 			Arta și industria cinematografică în vorbirea curentă sunt cunoscute sub denumirea de cinematografie. La rândul ei industria cinematografică se împarte în două sectoare distincte: producția de film și difuzarea lor în săli de cinematograf sau televiziuni, casete video, DVD-uri sau descărcându-l de pe internet (vizionare la cerere - on demand (en)).
 		</p>
-		
+
 		<p>
 			Un pasionat de film, care merge la cinematograf frecvent se numește "cinefil", iar valoarea filmului este stabilită de criticul de film, cu ocazia apariției producției de film sau în cazul prezentării lui la diferite festivaluri de film.
 		</p>
-		
+
 		<p>
 			Festivalurile de film sunt manifestări consacrate, unde jurii formate din cineaști și critici de prestigiu ai cinematografiilor mondiale, după niște criterii stricte premiază producțiile de film ale cinematografiilor naționale participante. La astfel de manifestații cinematografice a participat și participă și cinematografia românească, obținând premii importante pentru filmul românesc.
 		</p>
-		
+
 		<div class = "img-home">
 			<img src = "history.png" alt = "istoria"/>
 		</div>
-		
+
 		<div class = "video-container2" id = "player-video1">
 			<iframe src="https://www.youtube.com/embed/rrJPICybdj8" allowfullscreen></iframe>
 		</div>
-		
+
 	</div>
-	
+
 	<footer>
 	  <div class = "text-footer">
 		<p>Creat de Adrian Ispas <br>
@@ -77,7 +83,7 @@
 		<a href="#top"><img class = "imagine-footer" src = "top.png" alt = "Top of the page"></a>
 	  </div>
 	</footer>
-	
+
 </body>
 
 </html>

@@ -2,4 +2,4 @@ function exitFunction(){
 	return '';
 }
 
-window.onbeforeunload = exitFunction;
+//window.onbeforeunload = exitFunction;

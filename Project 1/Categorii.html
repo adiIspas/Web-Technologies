@@ -9,16 +9,17 @@
 	<link rel="icon" type="image/png" href="favicon.ico">
 	<script type="text/javascript" src = "trailer.js"></script>
 	<script type="text/javascript" src = "exit.js"></script>
+	<script type="text/javascript" src = "imagini.js"></script>
 </head>
 
 <body>
-	
+
 	<div id = "top">
 		<a href = "Home.html">
 			<img class = "logo" src = "logo-filme.png" alt = "Logo"/>
 		</a>
 	</div>
-	
+
 	<div class = "meniu-s">
 	<ul class = "meniu">
 		<li class = "meniu-item"><a href = "Home.html">Acasa</a></li>
@@ -31,36 +32,36 @@
 				<li><a href = "Sf.html">SF</a></li>
 			</ul>
 		</li>
-		<li class = "meniu-item"><a href = "Teste.html">Teste Cinefili</a></li> 
+		<li class = "meniu-item"><a href = "Teste.html">Teste Cinefili</a></li>
 		<li class = "meniu-item"><a href = "Contact.html">Contact</a></li>
 	</ul>
 	<div class = "facebook">
 		<a href="https://www.facebook.com/adi.ispas95" target = "blank"><img class = "imagine-facebook" src = "facebook.png" alt = "Facebook"></a>
 	</div>
 	</div>
-	
+
 	<section class = "box-categorii">
 	<h2 class = "titlu-categorii">Cele mai recente filme</h2>
-	
+
 		<article class = "filme-recente">
 			<div class = "imagine"><h2>Actiune</h2>
 				<h3>Fast and Furios 6</h3>
-				<img class = "poster" src = "fast6.jpg" alt = "Fast 6"/> 
+				<img class = "poster" src = "fast6.jpg" alt = "Fast 6" onmouseover="bigImg(this)" onmouseout="normalImg(this)"/>
 				<img id = "trailer1" alt = "trailer" class = "buton-trailer" src = "buton.png"/>
 			</div>
 			<div class = "text">
 				<p>
 					De când Dom (Vin Diesel) și Brian (Paul Walker) au dat lovitura de la Rio împotriva imperiului condus de un escroc de talie internațioanlă, aducând în seiful echipei 100 de milioane de dolari, eroii noștri s-au preumblat pe tot globul. Dar, pentru că nu se pot întoarce acasă ca să trăiască liniștiți din acei bani, sunt acum nemulțumiți și simt că le lispește ceva.
 				</p>
-				
+
 				<p>
 					Hobbs (Dwayne Johnson) a pus ochii pe o grupare formată din șoferi ucigași-mercenari care răspândesc teroarea prin 12 orașe ale lumii, condusă de un geniu diabolic (Luke Evans), a cărui mână dreaptă este nimeni alta decât cea care a fost iubirea lui Dom, și pe care acum o crede moartă – Letty (Michelle Rodriguez). Singura modalitate ca să-i oprească e să fie mai tari decât ei, așa că Hobbs îi cere lui Dom să-și strângă echipa la Londra. Plata? Să fie iertați, ca să poată să se întoarcă și ei liniștiți acasă ca să se reunească cu familiile lor.
-				</p>				
-				
+				</p>
+
 				<div class = "video-container hidden-element" id = "player-video1">
 					<iframe src="https://www.youtube.com/embed/dKi5XoeTN0k" allowfullscreen></iframe>
 				</div>
-				
+
 				<img class = "actori-imagine" src = "actori.png" title = "Actori" alt = "Actori"/>
 				<ul class = "actori-text">
 						<li>Dwayne Johnson</li>
@@ -70,23 +71,23 @@
 					</ul>
 			</div>
 		</article>
-		
+
 		<article class = "filme-recente">
 			<div class = "imagine"><h2>Animatie</h2>
 				<h3>Zootropolis</h3>
-				<img class = "poster" src = "zootropolis.jpg" alt = "Zootropolis"/>
+				<img class = "poster" src = "zootropolis.jpg" alt = "Zootropolis" onmouseover="bigImg(this)" onmouseout="normalImg(this)"/>
 				<img id = "trailer2" alt = "trailer" class = "buton-trailer" src = "buton.png"/>
 			</div>
 			<div class = "text">
 				<p>
 					În oraşul animal Zootopia, o vulpe cu gura mare trebuie să fugă când i se înscenează o crimă. Poliţistul cel mai bun din Zootopia, un iepure neprihănit, este pe urma vulpii, dar când amândoi devin ţintele unei conspiraţii, sunt obligaţi să lucreze împreună şi descoperă că şi duşmanii naturali pot deveni cei mai buni prieteni.
 				</p>
-				
+
 				<div class = "video-container hidden-element" id = "player-video2">
 					<iframe src="https://www.youtube.com/embed/VCDQRy1od30" allowfullscreen></iframe>
 				</div>
-				
-				<img class = "actori-imagine" src = "actori.png" title = "Actori" alt = "Actori"/>	
+
+				<img class = "actori-imagine" src = "actori.png" title = "Actori" alt = "Actori"/>
 				<ul class = "actori-text">
 					<li>Ginnifer Goodwin</li>
 					<li>Jason Bateman</li>
@@ -95,11 +96,11 @@
 				</ul>
 			</div>
 		</article>
-		
+
 		<article class = "filme-recente">
 			<div class = "imagine"><h2>Comedie</h2>
 				<h3>Dirty Grandpa</h3>
-				<img class = "poster" src = "bunicul.jpg" alt = "Zootropolis"/>
+				<img class = "poster" src = "bunicul.jpg" alt = "Zootropolis" onmouseover="bigImg(this)" onmouseout="normalImg(this)"/>
 				<img id = "trailer3" alt = "trailer" class = "buton-trailer" src = "buton.png"/>
 			</div>
 			<div class = "text">
@@ -107,19 +108,19 @@
 					Jason Kelly (Zac Efron) se află la doar o săptămână distanță de nunta cu fiica răsfățată a șefului său, deci cu un pas mai aproape de visul lui de a deveni partener la firma de avocatură unde lucrează de mult. Abia târziu, tânărul va realiza că toate planurile îi sunt periclitate de bunicul guraliv, cu care pleacă în vacanța de primăvară la Daytona.
 				</p>
 
-				<p>	
+				<p>
 					Între petreceri scandaloase, conficte aprinse în bar și o noapte epică de karaoke, bătrânul Dick (Robert De Niro) pare de neoprit. Încearcă cele mai provocatoare experiențe și face tot posibilul să-și convingă nepotul să i se alăture. La finalul acestui concediu incredibil, bunicul dezlănțuit și formalul său nepot descoperă că există multe lucruri pe care le pot învața unul de la celălalt și leagă o relație mai strânsă ca niciodată.
 				</p>
 
 				<p>
 					Comedia „Bunicul dezlănțuit” îl prezintă, din 5 februarie la cinema, pe Robert De Niro în rolul unui veteran lipsit de prejudecăți și hotărât să demonstreze că viața merită trăită din plin la orice vârstă. Filmul este distribuit de Freeman Entertainment.
 				</p>
-				
+
 				<div class = "video-container hidden-element" id = "player-video3">
 					<iframe src="https://www.youtube.com/embed/aZSzMIFZT7Q" allowfullscreen></iframe>
 				</div>
-				
-				<img class = "actori-imagine" src = "actori.png" title = "Actori" alt = "Actori"/>	
+
+				<img class = "actori-imagine" src = "actori.png" title = "Actori" alt = "Actori"/>
 				<ul class = "actori-text">
 					<li>Robert De Niro</li>
 					<li>Zac Efron</li>
@@ -128,11 +129,11 @@
 				</ul>
 			</div>
 		</article>
-		
+
 		<article class = "filme-recente">
 			<div class = "imagine"><h2>Dragoste</h2>
 				<h3>How to Be Single</h3>
-				<img class = "poster" src = "singur.jpg" alt = "Cum sa fii singur si fericit"/>
+				<img class = "poster" src = "singur.jpg" alt = "Cum sa fii singur si fericit" onmouseover="bigImg(this)" onmouseout="normalImg(this)"/>
 				<img id = "trailer4" alt = "trailer" class = "buton-trailer" src = "buton.png"/>
 			</div>
 			<div class = "text">
@@ -148,12 +149,12 @@
 				<p>
 					Din 12 februarie la cinema, comedia „Cum să fii singur şi fericit” o readuce în rol principal pe Dakota Johnson, de această dată alături de Rebel Wilson, Alison Brie, Damon Wayans Jr. şi Leslie Mann, sub îndrumarea regizorală a lui Christian Ditter.
 				</p>
-				
+
 				<div class = "video-container hidden-element" id = "player-video4">
 					<iframe src="https://www.youtube.com/embed/RrDI4-BSovs" allowfullscreen></iframe>
 				</div>
-				
-				<img class = "actori-imagine" src = "actori.png" title = "Actori" alt = "Actori"/>	
+
+				<img class = "actori-imagine" src = "actori.png" title = "Actori" alt = "Actori"/>
 				<ul class = "actori-text">
 					<li>Dakota Johnson</li>
 					<li>Rebel Wilson</li>
@@ -162,23 +163,23 @@
 				</ul>
 			</div>
 		</article>
-		
+
 		<article class = "filme-recente">
 			<div class = "imagine"><h2>SF</h2>
 				<h3>The Martian</h3>
-				<img class = "poster" src = "martian.jpg" alt = "The Martian"/>
+				<img class = "poster" src = "martian.jpg" alt = "The Martian" onmouseover="bigImg(this)" onmouseout="normalImg(this)"/>
 				<img id = "trailer5" alt = "trailer" class = "buton-trailer" src = "buton.png"/>
 			</div>
 			<div class = "text">
 				<p>
 					În timpul unei misiuni pe Marte cu echipaj uman, astronautul Mark Watney (Damon) este considerat mort, victimă a unei furtuni puternice. Însă Watney supraviețuiește urgiei și descoperă că a fost lăsat singur pe ostila planetă. Cu provizii insuficiente, este nevoit să-și folosească la maxim ingeniozitatea, inteligența și forța interioară pentru a râmâne în viață și a găsi o cale prin care mesajul său de ajutor să ajungă pe Pământ. La milioane de mile distanță, NASA și echipa internațională de oameni de știință caută neîncetat soluția prin care să îl aducă pe ‘marțian’ acasă, în vreme ce colegii săi de echipă pun și ei la cale o misiune îndrăzneață, dacă nu imposibilă, de salvare. Pe măsură ce aceste povești, mostre incredibile de curaj, se desfășoară, voci din lumea întreagă se unesc pentru a încuraja revenirea acasă, în siguranță, a lui Watney.
 				</p>
-				
+
 				<div class = "video-container hidden-element" id = "player-video5">
 					<iframe src="https://www.youtube.com/embed/Ue4PCI0NamI" allowfullscreen></iframe>
 				</div>
-				
-				<img class = "actori-imagine" src = "actori.png" title = "Actori" alt = "Actori"/>	
+
+				<img class = "actori-imagine" src = "actori.png" title = "Actori" alt = "Actori"/>
 				<ul class = "actori-text">
 					<li>Matt Damon</li>
 					<li>Kristen Wiig</li>
@@ -188,7 +189,7 @@
 			</div>
 		</article>
 	</section>
-	
+
 	<footer>
 	  <div class = "text-footer">
 		<p>Creat de Adrian Ispas <br>
@@ -199,7 +200,7 @@
 		<a href="#top"><img class = "imagine-footer" src = "top.png" alt = "Top of the page"></a>
 	  </div>
 	</footer>
-	
+
 </body>
 
 </html>
