@@ -1,0 +1,58 @@
+body {
+  background-color:red;
+  color:white;
+}
+
+.titlu {
+  text-align: center;
+  font-family: serif;
+  font-style: italic;
+}
+
+ul ul {
+  display: none;
+}
+
+ul li:hover + ul {
+  display: block;
+}
+
+ul ul:hover {
+  display: block;
+}
+
+.primaImagine {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  border: 7px solid yellow;
+  border-radius: 50px;
+  cursor: crosshair;
+}
+
+.lista {
+  list-style-type: upper-roman;
+}
+
+#intro {
+  text-align: right;
+  color: yellow;
+}
+
+a:visited {
+  text-decoration:none;
+  color:green;
+}
+
+#galerie {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  text-align: center;
+}
+
+.imagine {
+  margin: 10px;
+  display: inline-block;
+}
