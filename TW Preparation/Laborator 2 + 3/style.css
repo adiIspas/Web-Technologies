@@ -1,0 +1,23 @@
+@media screen and (min-width: 480px) {
+    body {
+        background-color: yellow;
+    }
+}
+
+@media screen and (max-width: 479px) {
+    body {
+        background-color: orange;
+    }
+}
+
+ol ul {
+  display: none;
+}
+
+ol li:hover + ul {
+  display: block;
+}
+
+ol ul:hover {
+  display: block;
+}
