@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <script type="text/javascript">
+    class Interval {
+      constructor (x, y) {
+                   this.mx= x;
+                   this.my= y; }
+      apartine (z){
+             return  (z <=  this.my) &&  (z >= this.mx);}
+                        }   //clasa
+
+      var obi = new Interval(1,4);   // obiect din clasa Interval
+
+
+      Interval.prototype.valid  = function(){return (this.my  >=  this.mx);};
+
+      alert(obi.valid());
+    </script>
+    <title>Constructor</title>
+  </head>
+  <body>
+
+  </body>
+</html>
