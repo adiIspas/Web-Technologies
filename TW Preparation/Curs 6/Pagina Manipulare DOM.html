@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Manipulare DOM</title>
+    <script type="text/javascript" src = "script.js"></script>
+  </head>
+  <body>
+    <h1 align = "center">Bun venit!</h1>
+    <hr>
+
+    <img src="imagine1.png" alt="Primul alt" id = "imagine"/>
+    <br>
+    <button type="button" name="button" onclick="functia1()">Schimba alt</button>
+    <hr>
+
+    <p id = "paragraf">Paragraf pentru test</p>
+    <button type="button" name="button" onclick="functia2()">Node</button>
+    <hr>
+
+    <img src="imagine2.png" alt="Imagine" id = "imagine2"/>
+    <br>
+    <button id = "ascunde" type="button" name="vizibile" onmouseover="functia3()">Ascunde imaginile</button>
+    <hr>
+
+    <ul id = "lista">
+      <li>Primul element</li>
+      <li>Al doilea element</li>
+      <li>Al treilea element</li>
+    </ul>
+    <button type="button" name="button" onclick = "functia4()">Manipuleaza lista</button>
+    <hr>
+
+    <p id = "paragraf1">Acesta este primul paragraf</p>
+    <p id = "paragraf2">Acesta este cel de-al doi-lea paragraf.</p>
+    <button type="button" name="button" onmouseover="functia5()">Schimba paragrafe</button>
+    <hr>
+
+    <img id = "poster" src="fast6.png" alt="Fast 6" onmouseover="functia6()" onmouseout="functia7()" width="250px"/>
+    <hr>
+
+    <p id = "atribut" class = "clasaatr">Acesta este un paragraf pentru testare atribute</p>
+    <button type="button" name="button" onclick="functia8()">Vezi atribute</button>
+
+  </body>
+</html>
