@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Subiectul</title>
+  </head>
+  <body>
+    <h1 align = "center">Bun venit!</h1>
+
+    <ol id = "lista1">
+      <li>miau</li>
+      <li>chit</li>
+      <li>ham</li>
+    </ol>
+
+    <ol id = "lista2">
+      <li>muu</li>
+      <li>cip</li>
+      <li>bzzz</li>
+      <li>gugu</li>
+    </ol>
+  </body>
+  <script type="text/javascript">
+  var liuri = document.getElementsByTagName('li');
+  var lista1 = document.getElementById('lista1');
+  var lista2 = document.getElementById('lista2');
+
+  for(var li in liuri){
+    liuri[li].onclick = function(e){
+      var node = e.target;
+      var parent = node.parentNode;
+      parent.removeChild(node);
+      if(parent == lista1){
+        lista2.appendChild(node);
+      }
+      else {
+        lista1.appendChild(node);
+      }
+    }
+  }
+  </script>
+</html>

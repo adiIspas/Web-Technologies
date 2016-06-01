@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Subiectul 1</title>
+  </head>
+  <body>
+    <ul id = "non">
+      <li class = "click">primul</li>
+      <li>al doilea</li>
+      <li>al treilea</li>
+    </ul>
+
+    <ul id = "parinte">
+      <li class = "click">Parinte primul</li>
+      <li class = "click">Parinte al doilea</li>
+      <li>Parinte al treilea</li>
+    </ul>
+
+    <button type="button" id = "buton">0</button>
+  </body>
+  <script type="text/javascript">
+    var ul = document.getElementById('parinte');
+    var liuri = document.getElementsByTagName('li');
+    var click = document.getElementsByClassName('click');
+    var numar = click.length;
+    var buton = document.getElementById('buton');
+    var count = Number(localStorage.getItem('clickuri'));
+    ascunde();
+    for(var li in liuri){
+      liuri[li].onclick = function(event){
+        var node = event.target;
+        var parinte = node.parentNode;
+        if(parinte == ul && node.className == 'click') {
+          alert(numar);
+          creste();
+          scrie();
+          setTimeout(ascunde,3000);
+        }
+      }
+    }
+
+    function creste(){
+      if(count){
+        localStorage.setItem('clickuri', count + 1);
+      }
+      else{
+        localStorage.setItem('clickuri', 1);
+      }
+    }
+
+    function scrie(){
+      buton.style.display = "block";
+      buton.textContent = localStorage.getItem('clickuri');
+    }
+
+    function ascunde(){
+      buton.style.display = "none";
+    }
+  </script>
+</html>
