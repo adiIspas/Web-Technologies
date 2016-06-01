@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Subiectul 2</title>
+  </head>
+  <body>
+    <ol id = "lista1">
+      <li>miau</li>
+      <li>chit</li>
+      <li>ham</li>
+    </ol>
+    <ol id = "lista2">
+      <li>muu</li>
+      <li>cip</li>
+      <li>bzzz</li>
+      <li>gugu</li>
+    </ol>
+  </body>
+  <script type="text/javascript">
+    var liuri = document.getElementsByTagName('li');
+    var lista1 = document.getElementById('lista1');
+    var lista2 = document.getElementById('lista2');
+
+    var ellista1 = 0;
+    var ellista2 = 0;
+
+
+    var node1;
+    var node2;
+
+    for(var li in liuri){
+      var parent = liuri[li].parentNode;
+      if(parent == lista1){
+        ellista1++;
+      }
+      else{
+        ellista2++;
+      }
+    }
+
+    var x = prompt("Numar");
+    var n = parseInt(x);
+
+    if(n > ellista1 || n > ellista2){
+      alert("nu");
+    }
+    else{
+      var node;
+      var node1;
+      var node2;
+      var parentNode1;
+      var parentNode2;
+
+      var x1 = 0;
+      var x2 = 0;
+      for(var li in liuri){
+        node = liuri[li];
+        if(node.parentNode == lista1){
+          x1++;
+          if(x1 == n){
+            parentNode1 = node.parentNode;
+            node1 = node;
+          }
+        }
+        else {
+          if(node.parentNode == lista2){
+            x2++;
+            if(x2 == n){
+              parentNode2 = node.parentNode;
+              node2 = node;
+            }
+          }
+        }
+      }
+
+      // parentNode1.insertBefore(node2,node1);
+      // parentNode2.insertBefore(node1,node2);
+      parentNode1.removeChild(node1);
+      parentNode2.removeChild(node2);
+
+      parentNode1.appendChild(node2);
+      parentNode2.appendChild(node1);
+
+    }
+
+  </script>
+</html>
